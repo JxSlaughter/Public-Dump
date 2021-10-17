@@ -1,0 +1,209 @@
+import time
+import sys
+import keyboard
+
+
+
+quickdialog = .01
+a = .05
+b = .075
+dialog = .08
+d = 1.25
+e = 1.88
+f = 3
+g = 4
+test = .5
+
+
+
+def start_up_menu_prints():
+    print("[0] How to play")
+    print("[1] Start a new game")
+    print("[2] Continue from last checkpoint")
+    print("[3] Exit game")
+    
+
+def in_game_menu_prints():
+    print("[1] Mark this as checkpoint")
+    print("[2] Return to menu")
+    print("[3] Exit game")
+
+
+def tutorial():
+    print("Press ENTER after you are done reading a line of text to continue.")
+    print("When prompted, type in the option you would like to perform.\nHit ENTER to submit responses.")
+    
+
+
+def start_up_menu_input():
+    input("Enter your option:   ")
+
+def in_game_menu_input():
+    input("Enter your option:   ")
+    pass
+
+
+
+
+class Path:
+    def __init__(self, path, value):
+        self.path = path
+        self.value = value
+
+
+intro = Path('intro', 0)
+path_a = Path('A', 0)
+path_b = Path('B', 0)
+
+#def introduction_event(): remember to indent below when adding it to the event
+#var_c = f"hello my name is: {var_a} and {var_b}, bye"
+
+input("Press ENTER to start.")
+print()
+print()
+print()
+line1 = 'BOSS: '
+print(line1, end = "")
+time.sleep(1)
+line2 = '"YOU\'RE FIRED!"'
+for character in line2:
+    print(end=character, flush=True)
+    time.sleep(quickdialog)
+
+
+print()
+input()
+print("Your boss has had it with your tardiness!", end = "")
+input()
+print("He didn’t know your car was in the shop- ", end = "")
+time.sleep(2.3)
+print("he didn’t seem to care either.", end = "")
+time.sleep(3)
+input()
+print("Good thing you took the bus all the way across town for THIS!", end = "")
+input()
+print("You walk down the street with nowhere to go.", end = "")
+input()
+print("Your newfound joblessness has made the city feel big and scary.", end = "")
+input()
+print("Maybe if you beg, ", end = "")
+time.sleep(1)
+print("your landlord will let you pay your rent, ", end = "")
+time.sleep(2)
+print("late", end = "")
+
+line3 = '...'
+for character in line3:
+    print(end=character, flush=True)
+    time.sleep(.75)
+print(" again.", end = "")
+input()
+print("As you silently beg for a guardian angel to help you-- it happens:", end = "")
+input()
+print("A Ferrari speeds down the street and after performing a donut, parks next to you.", end = "")
+input()
+print("The windows roll down to see a rich, drunk man.", end = "")
+input()
+print("He throws you an expensive looking box.", end = "")
+print()
+input()
+line4 = 'RICH MAN: '
+print(line4, end = "")
+time.sleep(1)
+line5 = '"Happy Birthday, '
+for character in line5:
+    print(end=character, flush=True)
+    time.sleep(dialog)
+line6 =  'Kid! '
+print('Kid! ', end = "")
+time.sleep(1)
+line7 = 'Ciao!"'
+for character in line7:
+    print(end=character, flush=True)
+    time.sleep(.02)
+time.sleep(1)
+print()
+print()
+print("He drives off just as quickly as he came.", end = "")
+input()
+print("You didn’t expect your guardian angel to smell like booze.", end = "")
+input()
+print("Regardless, you wonder what the hell is in this box!", end = "")
+input()
+print("", end = "")
+print("You know it’s dangerous to open a present from a total stranger — ", end = "")
+time.sleep(2)
+print("but, what the hell? " , end = "")
+time.sleep(2)
+print("You’ve got nothing to lose!", end = "")
+input()
+print("You look inside the box, and see a pink diamond the size of your fist!", end = "")
+input()
+print("You panic, you have no idea where this came from or how that stranger got it…", end = "")
+input()
+print("But you also wonder how much it’s worth…", end = "")
+input()
+print("What should you do?", end = "")
+input()
+print()
+print()
+print("[A] Take the Diamond!")
+print("[B] Put it down, leave, forget you ever saw it!")
+in_game_menu_prints()
+in_game_menu_input()
+time.sleep(99)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+print()
+print("##################################################################")
+print("##################################################################")
+print("###                                                            ###")
+print("###               _______________________________              ###")
+print("###           /@@@#............@@@@@............@@@.\          ###")
+print("###          /@@(/@@........#@@.   @@@........@@@..@.\         ###")
+print("###         /@@(/)%@@....@@@..       @@@....@@.  ..@@:\        ###")
+print("###        /@@(//////@@/@@*....         @@@@@@.    ..@:\       ###")
+print("###       |@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@:.|      ###")
+print("###        \@@@(///////#@@..............@@%:       .@@:/       ###")
+print("###         \@@@(//////&@@..............@@%:      .@@./        ###")
+print("###            \#@@(////@@@.............@@%:     @@/           ###")
+print("###             \@@(/////@@(...........@@%:    .@@/            ###")
+print("###                \@@(///@@,.........@@%: .&@@/               ###")
+print("###                  \@@(//@@........@@%:..@@@/                ###")
+print("###                     \@@(/@@.....@@#  @@/                   ###")
+print("###                      \@@@@@..@@@@@%../                     ###")
+print("###                         \,%@@@@%.../                       ###")
+print("###                           \%@@%../                         ###")
+print("###                                                            ###")
+print("##################################################################")
+print("##################################################################")
+print()
+print()
+time.sleep(2)
+print("                                TITLE                             ")
+time.sleep(2)
+print("                   Programmed by:   Jimmy Slaughter               ") 
+time.sleep(2)
+print("                   Written by:      Robert Colyar                 ") 
+time.sleep(2)
+print()
+print()
+print()
+print("Welcome to TITLE.")
+time.sleep(2)
+start_up_menu_prints()
+start_up_menu_input()
